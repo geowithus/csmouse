@@ -43,18 +43,18 @@ You can download whole package with both scripts:
 > Note that we don't define you CSS class selector, you choose whatever you want.
 
 ### Via `CSS` class in Native Javascript Version
-Add same class to all your elements that you want use in selection process, we like `sel` CSS class
+Add same class to all your elements that you want use in selection process, we like `sels` CSS class
 ```html
-<a id="item-1" href="#" class="sel">First Item</a>
-<a id="item-2" href="#" class="sel">Second Item</a>
-<a id="item-3" href="#" class="sel">Third Item</a>
-<a id="item-4" href="#" class="sel">Fourth Item</a>
-<a id="item-5" href="#" class="sel">Fifth Item</a>
-<a id="item-6" href="#" class="sel">Sixth Item</a>
+<a id="item-1" href="#" class="sels">First Item</a>
+<a id="item-2" href="#" class="sels">Second Item</a>
+<a id="item-3" href="#" class="sels">Third Item</a>
+<a id="item-4" href="#" class="sels">Fourth Item</a>
+<a id="item-5" href="#" class="sels">Fifth Item</a>
+<a id="item-6" href="#" class="sels">Sixth Item</a>
 ```
 and than call JS function:
 ```js
-var csMouseItems = new CSMOUSE("sels");
+var csMouseItems = new CSMOUSE("sels", {settings...});
 ```
 
 > You can use whatever HTML tag you want,a tag, span tag, div tag, etc.
@@ -62,12 +62,12 @@ var csMouseItems = new CSMOUSE("sels");
 ### Via `CSS` class in jQuery Plugin Javascript Version
 Add same class to all your elements that you want use in selection process, we like `sel` CSS class
 ```html
-<a id="item-1" href="#" class="sel">First Item</a>
-<a id="item-2" href="#" class="sel">Second Item</a>
-<a id="item-3" href="#" class="sel">Third Item</a>
-<a id="item-4" href="#" class="sel">Fourth Item</a>
-<a id="item-5" href="#" class="sel">Fifth Item</a>
-<a id="item-6" href="#" class="sel">Sixth Item</a>
+<a id="item-1" href="#" class="sels">First Item</a>
+<a id="item-2" href="#" class="sels">Second Item</a>
+<a id="item-3" href="#" class="sels">Third Item</a>
+<a id="item-4" href="#" class="sels">Fourth Item</a>
+<a id="item-5" href="#" class="sels">Fifth Item</a>
+<a id="item-6" href="#" class="sels">Sixth Item</a>
 ```
 and than call JS jQuery plugin:
 ```js
@@ -75,7 +75,7 @@ var csMouseItems = $('.sels').CSMouse('sels');
 ```
 
 > You can use whatever HTML tag you want,a tag, span tag, div tag, etc.
-> Also note that you must provide two times `selector` because jQuery removed selector as option from version 1.7., more on [link](https://api.jquery.com/selector/) 
+ 
 
 ### `options` in both versions
 
