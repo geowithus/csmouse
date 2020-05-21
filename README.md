@@ -81,7 +81,7 @@ var csMouseItems = $('.sels').CSMouse('sels');
 
 > Note that all option are optional, you can or not to use them.
 
-####first
+###first
 
 Type: `String`  
 Default: `"csmouse_first_" + selector`
