@@ -130,7 +130,7 @@ Default: `"csmouse_none_elem_" + selector`
 
 HTML ID attribute of element which click will provide to all items will be deselected.
 
-####togg
+#### togg
 
 Type: `String`  
 Default: `"csmouse_toggle_elem_" + selector`
@@ -144,7 +144,7 @@ Default: `"csmouse_cnt_elem_" + selector`
 
 HTML ID attribute of element in which script will put number of selected items.
 
-####elems
+#### elems
 
 Type: `String`  
 Default: `"csmouse_elems_elem_" + selector`
@@ -158,7 +158,7 @@ Default: `"csmouse_json_elem_" + selector`
 
 HTML ID attribute of element which click will provide JSON string of selected items, e.g. `["item-1","item-2","item-3","item-4"]`.
 
-####serial
+#### serial
 
 Type: `String`  
 Default: `"csmouse_serial_elem_" + selector`
