@@ -81,49 +81,49 @@ var csMouseItems = $('.sels').CSMouse('sels');
 
 > Note that all option are optional, you can or not to use them.
 
-###first
+#### first
 
 Type: `String`  
 Default: `"csmouse_first_" + selector`
 
 HTML ID attribute of input tag element that script will save a first clicked index of element, like left mouse click or CTRL clicked element. If element doesn't exist script will put it in parent element of select able items. 
 
-####last
+#### last
 
 Type: `String`  
 Default: `"csmouse_last_" + selector`
 
 HTML ID attribute of input tag element that script will save a last clicked element. If element doesn't exist script will put it in parent element of select able items.
 
-####values
+#### values
 
 Type: `String`  
 Default: `"csmouse_values_" + selector`
 
 HTML ID attribute of input tag element that script will save index values of selected elements. If element doesn't exist script will put it in parent element of select able items.
 
-####items
+#### items
 
 Type: `String`  
 Default: `"csmouse_items_" + selector`
 
 HTML ID attribute of input tag element that script will save IDs values of selected elements. If element doesn't exist script will put it in parent element of select able items.
 
-####color
+#### color
 
 Type: `String`  
 Default: `csmouse_color`
 
 CSS class that script will add to selected items.
 
-####all
+#### all
 
 Type: `String`  
 Default: `"csmouse_all_elem_" + selector`
 
 HTML ID attribute of element which click will provide to all items will be selected.
 
-####none
+#### none
 
 Type: `String`  
 Default: `"csmouse_none_elem_" + selector`
@@ -137,7 +137,7 @@ Default: `"csmouse_toggle_elem_" + selector`
 
 HTML ID attribute of element which click will provide to toggle items selection.
 
-####cnt
+#### cnt
 
 Type: `String`  
 Default: `"csmouse_cnt_elem_" + selector`
@@ -151,7 +151,7 @@ Default: `"csmouse_elems_elem_" + selector`
 
 HTML ID attribute of element in which script will put number of total selectable items.
 
-####json
+#### json
 
 Type: `String`  
 Default: `"csmouse_json_elem_" + selector`
@@ -165,21 +165,21 @@ Default: `"csmouse_serial_elem_" + selector`
 
 HTML ID attribute of element which click will provide form serialization format of selected items, e.g. `sel=on&item-1&=onitem-2&=onitem-3&=onitem-4&=on]`.
 
-####output
+#### output
 
 Type: `String`  
 Default: `id`
 
 Choose what HTML tag attribute script will use for selected items, by default that is `ID` of tag element, but you can use e.g. `data-value="999"`.
 
-####debug
+#### debug
 
 Type: `Boolean`  
 Default: `false`
 
 If `true` script will log errors in internet browser console.
 
-###Exemple with all options included: 
+### Exemple with all options included: 
 ```js
 var csMouseItems = $('.sels').CSMouse('sels', {
     first:  "first_sels",
@@ -199,15 +199,15 @@ var csMouseItems = $('.sels').CSMouse('sels', {
 });
 ```
 
-##Additional script functions
+## Additional script functions
 
-###Get all selected items in JSON string format
+### Get all selected items in JSON string format
 
 ```js
 csMouseItems.getSelectedJSON();
 ```
 
-###Get all selected items in form serialization format
+### Get all selected items in form serialization format
 ```js
 csMouseItems.getSelectedSerialize();
 ```
