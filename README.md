@@ -77,7 +77,7 @@ var csMouseItems = $('.sels').CSMouse('sels');
 > You can use whatever HTML tag you want,a tag, span tag, div tag, etc.
 > Also note that you must provide two times `selector` because jQuery removed selector as option from version 1.7., more on [link](https://api.jquery.com/selector/) 
 
-###  in both versions
+### `options` in both versions
 
 > Note that all option are optional, you can or not to use them.
 
