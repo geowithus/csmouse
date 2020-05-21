@@ -20,7 +20,7 @@ Please check demo version of pure JavaScript on this
 
 You can download whole package with both scripts:
 
-- [Download the latest release.](https://github.com/snapappointments/bootstrap-select/archive/v1.13.17.zip)
+- [Download the latest release.](https://github.com/kkatusic/csmouse/archive/master.zip)
 - Include in your working file:
 
 ```html
