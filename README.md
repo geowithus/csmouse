@@ -217,6 +217,6 @@ csMouseItems.getSelectedSerialize();
 ## Copyright and license
 
 Available through [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/) License.<br>
-For commercial or any enterprise use, please contact us at TODO copyright@geowith.us. 
+For commercial or any enterprise use, please contact us at [copyright@geowith.us](https://geowith.us/contact/CSMOUSE+COPYRIGHT+INQUIRY/). 
 
 Copyright © 2014+ GEO With Us Corp. All rights reserved.
