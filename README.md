@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-	<a href="https://geowith.us/csmouse/"><img src="https://geowith.us/share/tests/csm/csmouse-animation.gif" width="486" height="520" alt="csmouse demo"></a>
+	<a href="https://geowith.us/csmouse/"><img src="https://geowith.us/csmouse/images/csmouse-animation.gif" width="486" height="520" alt="csmouse demo"></a>
 </p>
 
 ## Demo
