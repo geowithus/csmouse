@@ -199,7 +199,7 @@ var csMouseItems = $('.sels').CSMouse('sels', {
 });
 ```
 
-## Additional script functions
+## Additional script functions 
 
 ### Get all selected items in JSON string format
 
