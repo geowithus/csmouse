@@ -93,7 +93,7 @@ var csMouseItems = $('.sels').CSMouse('sels');
 ```
 
 > You can use whatever HTML tag you want, a tag, span tag, div tag, p tag, etc.
-> Also note, that in jQuery plugin instancing code, you must provide `selector` as reference and argument, because jQuery removed selector as argument from version 1.7., more on [link](https://api.jquery.com/selector/).
+> Also note, that in jQuery plugin instancing code, you must provide `selector` as reference and argument, because jQuery removed selector as function argument from version 1.7., more on [link](https://api.jquery.com/selector/).
 
 ### `options` in both versions
 
