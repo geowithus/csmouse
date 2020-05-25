@@ -45,12 +45,12 @@ You can download whole package with both scripts:
 ## Usage
 
 > Note that we don't define your CSS class selector, you choose whatever you want.
-> Also, there are two coloring classes:
-1. :hover class, like: .selector:hover, and
-2. selected element class, like: .selector.color
+Also, there are two coloring classes:
+1. :hover class, like: `.selector:hover`, and
+2. selected element class, like: `.selector.color`
 
-> So, if you choose to have <i>myclassname</i> as a main selector class name, selected element color_class must be defined as:
-.<i>myclassname</i>.color_class {..}
+So, if you choose to have `<i>myclassname</i>` as a main selector class name, selected element color_class must be defined as:
+`.<i>myclassname</i>.color_class {..}`
 
 ### Via `CSS` class in Native Javascript Version
 Add same class to all your elements that you want use in selection process, like we used `sels` CSS class
