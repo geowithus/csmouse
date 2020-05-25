@@ -12,7 +12,7 @@
 ## Intro
 
 <p>
-	Knowing that (1) DOM document uses indexes to numerate elements of the same class (among all others), and (2) having in mind ease of folder/files selection in file explorer alike applications, and (3) having the knowledge of HTML DOM Keyboard.key Property, we put all three together of those to this functionality via JavaScript (and jQuery).
+	Knowing that (1) DOM document uses indexes to numerate elements of the same class (among all others), and (2) having in mind ease of folder/files selection in file explorer alike applications, and (3) having the knowledge of HTML DOM Keyboard.key Property, we put all three together to this functionality. In JavaScript and jQuery.
 	And this functionality really super-boosts productivity.
 </p>
 
@@ -107,7 +107,7 @@ var csMouseItems = $('.sels').CSMouse('sels', {settings options...});
 ```
 
 > You can use whatever HTML tag you want, a tag, span tag, div tag, p tag, etc.
-> Also note, that in jQuery plugin instancing code, you must provide `selector` as reference and argument, because jQuery removed selector as function argument from version 1.7., more on [link](https://api.jquery.com/selector/).
+> Also note, that in jQuery plugin instancing code, you must provide `selector` as the reference and the argument, because jQuery removed selector as function argument from version 1.7., more on [link](https://api.jquery.com/selector/).
 
 ### `settings options` in both versions
 
