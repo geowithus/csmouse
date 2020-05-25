@@ -44,8 +44,7 @@ You can download whole package with both scripts:
 
 ## Usage
 
-> Note that we don't define your CSS class selector, you choose whatever you want.
-There are two coloring classes:
+Note that we don't define your CSS class selector, you choose whatever you want. There are two coloring classes:
 1. :hover class, like: 
 ```css
 .selector:hover
