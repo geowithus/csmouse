@@ -12,7 +12,7 @@
 ## Intro
 
 <p>
-	Knowing that (1) DOM document uses indexes to numerate elements of the same class (among all others), and (2) having in mind ease of folder/files selection in file explorer alike applications, and (3) having the knowledge of HTML DOM Keyboard.key Property, we put all three together to this functionality. In JavaScript and jQuery.
+	Knowing that (1) DOM document uses indexes to numerate elements of the same class (among all others, which JavaScript represents in arrays), and (2) having in mind ease of folder/files selection in file explorer alike applications, and (3) having the knowledge of HTML DOM Keyboard.key Property, we put all three together to this functionality. In JavaScript and jQuery.
 	And this functionality really super-boosts productivity.
 </p>
 
