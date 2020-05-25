@@ -51,7 +51,7 @@ You can download whole package with both scripts:
 
 ## Usage
 
-Note that we don't define your CSS class selector, you choose whatever you want. 
+Note that we don't define your CSS class selector, you choose whatever you want. For multiple lists on one document, you choose different selectors naming. (e.g. first list will have selector: ".sel_one", second: ".sel_two", etc.
 
 ### Selector styling
 
@@ -71,7 +71,7 @@ So, if you choose to have `myclassname` as a main selector class name, CSS shoul
 /*hover*/
 .myclassname:hover {...}
 /*selected element style*/
-.myclassname.color_class {..}
+.myclassname.color_class {...}
 ```
 
 ### Via `CSS` class in Native Javascript Version
