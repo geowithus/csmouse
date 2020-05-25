@@ -9,6 +9,10 @@
 	<a href="https://geowith.us/csmouse/"><img src="https://geowith.us/csmouse/images/csmouse-animation.gif" width="486" height="520" alt="csmouse demo"></a>
 </p>
 
+## Web page
+
+Check it out at [link](https://geowith.us/csmouse/)
+
 ## Demo
 
 Please check demo version of pure JavaScript on this 
