@@ -94,13 +94,13 @@ Add same class to all your elements that you want use in selection process, we l
 ```
 and than call JS jQuery plugin:
 ```js
-var csMouseItems = $('.sels').CSMouse('sels');
+var csMouseItems = $('.sels').CSMouse('sels', {settings...});
 ```
 
 > You can use whatever HTML tag you want, a tag, span tag, div tag, p tag, etc.
 > Also note, that in jQuery plugin instancing code, you must provide `selector` as reference and argument, because jQuery removed selector as function argument from version 1.7., more on [link](https://api.jquery.com/selector/).
 
-### `options` in both versions
+### `settings options` in both versions
 
 > Note that all option are optional, you can or not to use them.
 
