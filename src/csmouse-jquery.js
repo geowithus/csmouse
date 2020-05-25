@@ -1,13 +1,13 @@
 /**
  *
- * @Class		    CSMOUSE / csmouse-class.js, jQuery Plugin
- * @Idea		    Darko B.
- * @Authors		    Darko B. <dbertovi@geowith.us> && Kresimir K. <kreso@geowith.us>
- * @Copyright		Copyright (c) GEO With Us Corp. USA, New York, NY
- * @Version		    1.2 Apr-2014
- * @License		    Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
- * @ComercialUse	Feel free to study and addapt for personal use, but for commercial or any enterprise use, please contact us @ copyright@geowith.us
- * @URL			    https://geowith.us/csmouse/
+ * @Class           CSMOUSE / csmouse-class.js, jQuery Plugin
+ * @Idea            Darko B.
+ * @Authors         Darko B. && Kresimir K.
+ * @Copyright       Copyright (c) GEO With Us Corp. USA, New York, NY
+ * @Version         1.2 Apr-2014
+ * @License         Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+ * @ComercialUse    Feel free to study and addapt for personal use, but for commercial or any enterprise use, please contact us @ copyright@geowith.us
+ * @URL             https://geowith.us/csmouse/
  *
  */
 (function($){
@@ -16,14 +16,14 @@
     $.fn.CSMouse = function(selector, options) {
 
         var defaults = {
-            first:      "csmouse_first_" + selector,
-            last:       "csmouse_last_" + selector,
-            values:     "csmouse_values_" + selector,
-            items:      "csmouse_items_" + selector,
+            first:      "first_" + selector,
+            last:       "last_" + selector,
+            values:     "values_" + selector,
+            items:      "items_" + selector,
             color:      "csmouse_color",
-            all:        "csmouse_all_elem_" + selector,
-            none:       "csmouse_none_elem_" + selector,
-            togg:       "csmouse_toggle_elem_" + selector,
+            all:        "sel_all_" + selector,
+            none:       "unsel_all_" + selector,
+            togg:       "toggle_" + selector,
             cnt:        "csmouse_cnt_elem_" + selector,
             elems:      "csmouse_elems_elem_" + selector,
             json:       "csmouse_json_elem_" + selector,
@@ -39,6 +39,7 @@
         var firstClickedItemIndex = $(this).first().index();
         var lastClickedItemIndex = $(this).first().index();
         var currentClickedItemIndex = null;
+        var lastClickedItemSelectedBefore = false;
         var selectedItems = [];
         var selectedIndexes = [];
         var selectedIDs = [];
@@ -194,6 +195,17 @@
         };
 
         /**
+         * Get the number of selected items
+         *
+         * @type {function(): *}
+         */
+        var getSelected = this.getSelected = function() {
+
+            return selectedItems.length;
+
+        };
+
+        /**
          * Get minimal number between two numbers
          *
          * @param first
@@ -342,8 +354,7 @@
         var selectItemsShift = function() {
 
             // Initialize clicked indexes
-            saveFirstClickedIndex(firstClickedItemIndex);
-            saveLastClickedIndex(lastClickedItemIndex);
+            saveLastClickedIndex(currentClickedItemIndex);
 
             var start = getMinimalIndex(firstClickedItemIndex, currentClickedItemIndex);
             var stop = getMaximalIndex(firstClickedItemIndex, currentClickedItemIndex);
@@ -363,10 +374,19 @@
             var stop = getMaximalIndex(firstClickedItemIndex, currentClickedItemIndex);
 
             for (var i = start; i <= stop; i++) {
-                $(initializedItems[i]).removeClass(settings.color);
+
+                // Remove if last CTRL clicked item has selected class
+                if( lastClickedItemSelectedBefore ){
+                    $(initializedItems[i]).removeClass(settings.color);
+                }
+                // Add if last CTRL clicked item hasn't selected class
+                else{
+                    $(initializedItems[i]).addClass(settings.color);
+                }
+
             }
 
-            saveFirstClickedIndex(firstClickedItemIndex);
+            saveLastClickedIndex(currentClickedItemIndex);
 
             saveSelectedElements();
 
@@ -380,6 +400,13 @@
             // Set up first clicked item for SHIFT purpose
             saveFirstClickedIndex(currentClickedItemIndex);
             saveLastClickedIndex(currentClickedItemIndex);
+
+            if( $(initializedItems[currentClickedItemIndex]).hasClass(settings.color) ){
+                lastClickedItemSelectedBefore = true;
+            }
+            else{
+                lastClickedItemSelectedBefore = false;
+            }
 
             $(initializedItems[currentClickedItemIndex]).toggleClass(settings.color);
 
