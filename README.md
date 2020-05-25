@@ -17,7 +17,7 @@ Check it out [here](https://geowith.us/csmouse/).
 
 Please check demo version of pure JavaScript veggies on this 
 [link](https://geowith.us/csmouse-js/).
-or our fruity jQuery plugin version on this 
+Or our fruity jQuery plugin version on this 
 [link](https://geowith.us/csmouse-jquery/).
 
 ## Quick start
@@ -44,7 +44,12 @@ You can download whole package with both scripts:
 
 ## Usage
 
-Note that we don't define your CSS class selector, you choose whatever you want. There are two coloring classes:
+Note that we don't define your CSS class selector, you choose whatever you want. 
+
+### Selector styling
+
+There are two coloring classes:
+
 1. :hover class, like: 
 ```css
 .selector:hover
