@@ -31,7 +31,7 @@ Or our fruity jQuery plugin version on this
 
 You can download whole package with both scripts:
 
-- [Download the latest release.](https://github.com/kkatusic/csmouse/archive/master.zip)
+- [Download the latest release.](http://github.com/geowithus/csmouse/archive/master.zip)
 - Include in your working file:
 
 ```html
