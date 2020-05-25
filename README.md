@@ -11,7 +11,7 @@
 
 ## Web page
 
-Check it out at [link](https://geowith.us/csmouse/)
+Check it out [here](https://geowith.us/csmouse/)
 
 ## Demo
 
