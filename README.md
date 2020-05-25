@@ -1,8 +1,9 @@
 # CSMOUSE JavaScript / jQuery Plugin | HTML Ctrl + Shift + Left Mouse Click Event
 
 <p align="center">
-    This functionality mimics Windows® File Explorer (or any other) gimmicks when selecting/deselecting files and folders.
-    It is simple in settings, 100% safe and styles and HTML/CSS/Datasets combinations are unlimited.
+This functionality mimics file explorer gimmicks when selecting/deselecting files and folders.
+In our CSMOUSE Object - we programmed it to work on web application sets of lists.
+It is simple in settings, 100% safe and styles and HTML/CSS/Datasets combinations are unlimited.
 </p>
 
 <p align="center">
@@ -12,7 +13,7 @@
 ## Intro
 
 <p>
-	Knowing that (1) DOM document uses indexes to numerate elements of the same class (among all others, which JavaScript represents in arrays), and (2) having in mind ease of folder/files selection in file explorer alike applications, and (3) having the knowledge of HTML DOM Keyboard.key Property, we put all three together to this functionality. In JavaScript and jQuery.
+	Knowing that (1) DOM document uses indexes to enumerate elements of the same class (among all others, which JavaScript represents in arrays), and (2) having in mind ease of folder/files selection in file explorer alike applications, and (3) having the knowledge of HTML DOM Keyboard.key Property, we put all three together to this functionality. In JavaScript and jQuery.
 	And this functionality really super-boosts productivity.
 </p>
 
@@ -20,7 +21,7 @@
 
 Check it out [here](https://geowith.us/csmouse/).
 
-## Demo
+## Demo with Downloads
 
 Please check demo version of pure JavaScript veggies on this 
 [link](https://geowith.us/csmouse-js/).
@@ -125,7 +126,7 @@ HTML storage element ID (input type="hidden"), which script uses to save and upd
 Type: `String`  
 Default: `"last_" + selector`
 
-HTML ID attribute of input tag element that script will save a last clicked element. If element doesn't exist script will put it in parent element of select able items.
+HTML storage element ID (input type="hidden"), which script uses to save and update first clicked element DOM index, like left mouse click or CTRL clicked element. If element doesn't exist script will put it in parent element of select able items.
 
 #### values
 
@@ -140,6 +141,8 @@ Type: `String`
 Default: `"items_" + selector`
 
 HTML ID attribute of input tag element that script will save IDs values of selected elements. If element doesn't exist script will put it in parent element of select able items.
+
+> Note, settings options (e.g. function arguments) <b>first, last, values, items</b> are storage types. Those can be any type of storage, including var, hidden input, sessions storage or local (browser) storage. We use hidden input, up to you to addapt to your demands.
 
 #### color
 
