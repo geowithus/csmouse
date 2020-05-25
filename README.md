@@ -112,7 +112,7 @@ var csMouseItems = $('.sels').CSMouse('sels', {settings options...});
 
 ### `settings options` in both versions
 
-> Note that all option are optional. If you want to use defaults, you don't have to set them at all.
+> Note that all settings options are optional. If you want to use defaults, you don't have to set them at all.
 
 #### first
 
