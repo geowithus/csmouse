@@ -66,12 +66,12 @@ There is a selector (CSS) class and there are two coloring (CSS) classes (select
 .selector.color {...}
 ```
 
-So, if you choose to have `myclassname` as a main selector class name, CSS should look like:
+So, if you choose to have `sels` as a main selector class name, CSS should look like:
 ```css
 /*hover*/
-.myclassname:hover {...}
+.sels:hover {...}
 /*selected element style*/
-.myclassname.color_class {...}
+.sels.color_class {...}
 ```
 
 ### Via `CSS` class in Native Javascript Version
