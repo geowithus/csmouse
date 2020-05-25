@@ -55,7 +55,7 @@ Note that we don't define your CSS class selector, you choose whatever you want.
 
 ### Selector styling
 
-There are two coloring classes:
+There is a selector (CSS) class and there are two coloring (CSS) classes (selector class must be the same for all selectable elements in the CSMOUSE list, number of which is unlimited on one DOM document):
 
 1. :hover class, like: 
 ```css
