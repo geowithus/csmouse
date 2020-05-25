@@ -77,7 +77,7 @@ Add same class to all your elements that you want use in selection process, like
 ```
 and than call JS function:
 ```js
-var csMouseItems = new CSMOUSE("sels", {settings...});
+var csMouseItems = new CSMOUSE("sels", {settings options...});
 ```
 
 > You can use whatever HTML tag you want, a tag, span tag, div tag, p tag, etc.
@@ -94,7 +94,7 @@ Add same class to all your elements that you want use in selection process, we l
 ```
 and than call JS jQuery plugin:
 ```js
-var csMouseItems = $('.sels').CSMouse('sels', {settings...});
+var csMouseItems = $('.sels').CSMouse('sels', {settings options...});
 ```
 
 > You can use whatever HTML tag you want, a tag, span tag, div tag, p tag, etc.
