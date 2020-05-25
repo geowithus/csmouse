@@ -250,6 +250,11 @@ csMouseItems.getSelectedJSON();
 csMouseItems.getSelectedSerialize();
 ```
 
+### Get number of selected items
+```js
+csMouseItems.getSelected();
+```
+
 > Please note that you use this function call inside scope that you are working. If you want script reference outside scope define global variable for script.
 
 ## Copyright and license
