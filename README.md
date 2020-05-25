@@ -66,7 +66,7 @@ There is a selector (CSS) class and there are two coloring (CSS) classes (select
 .selector.color {...}
 ```
 
-So, if you choose to have `sels` as a main selector class name, CSS should look like:
+So, if you choose to have `sels` as a main selector class name for one list, CSS should look like:
 ```css
 /*hover*/
 .sels:hover {...}
