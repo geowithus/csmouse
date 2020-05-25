@@ -48,7 +48,8 @@ You can download whole package with both scripts:
 > Also, there are two coloring classes:
 1. :hover class, like: .selector:hover, and
 2. selected element class, like: .selector.color
-So, if you choose to have <i>myclassname</i> as a main selector class name, selected element color_class must be defined as:
+
+> So, if you choose to have <i>myclassname</i> as a main selector class name, selected element color_class must be defined as:
 .<i>myclassname</i>.color_class {..}
 
 ### Via `CSS` class in Native Javascript Version
