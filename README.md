@@ -11,13 +11,13 @@
 
 ## Web page
 
-Check it out [here](https://geowith.us/csmouse/)
+Check it out [here](https://geowith.us/csmouse/).
 
 ## Demo
 
-Please check demo version of pure JavaScript on this 
-[link](https://geowith.us/csmouse-js/)
- or jQuery plugin version on this 
+Please check demo version of pure JavaScript veggies on this 
+[link](https://geowith.us/csmouse-js/).
+or our fruity jQuery plugin version on this 
 [link](https://geowith.us/csmouse-jquery/).
 
 ## Quick start
@@ -44,10 +44,15 @@ You can download whole package with both scripts:
 
 ## Usage
 
-> Note that we don't define you CSS class selector, you choose whatever you want.
+> Note that we don't define your CSS class selector, you choose whatever you want.
+> Also, there are two coloring classes:
+1. :hover class, like: .selector:hover, and
+2. selected element class, like: .selector.color
+So, if you choose to have <i>myclassname</i> as a main selector class name, selected element color_class must be defined as:
+.<i>myclassname</i>.color_class {..}
 
 ### Via `CSS` class in Native Javascript Version
-Add same class to all your elements that you want use in selection process, we like `sels` CSS class
+Add same class to all your elements that you want use in selection process, like we used `sels` CSS class
 ```html
 <a id="item-1" href="#" class="sels">First Item</a>
 <a id="item-2" href="#" class="sels">Second Item</a>
@@ -61,7 +66,7 @@ and than call JS function:
 var csMouseItems = new CSMOUSE("sels", {settings...});
 ```
 
-> You can use whatever HTML tag you want,a tag, span tag, div tag, etc.
+> You can use whatever HTML tag you want, a tag, span tag, div tag, p tag, etc.
 
 ### Via `CSS` class in jQuery Plugin Javascript Version
 Add same class to all your elements that you want use in selection process, we like `sel` CSS class
@@ -78,8 +83,8 @@ and than call JS jQuery plugin:
 var csMouseItems = $('.sels').CSMouse('sels');
 ```
 
-> You can use whatever HTML tag you want,a tag, span tag, div tag, etc.
-> Also note that you must provide two times `selector` because jQuery removed selector as option from version 1.7., more on [link](https://api.jquery.com/selector/) 
+> You can use whatever HTML tag you want, a tag, span tag, div tag, p tag, etc.
+> Also note, that in jQuery plugin instancing code, you must provide `selector` as reference and argument, because jQuery removed selector as argument from version 1.7., more on [link](https://api.jquery.com/selector/).
 
 ### `options` in both versions
 
