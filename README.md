@@ -84,28 +84,28 @@ var csMouseItems = $('.sels').CSMouse('sels');
 #### first
 
 Type: `String`  
-Default: `"csmouse_first_" + selector`
+Default: `"first_" + selector`
 
 HTML ID attribute of input tag element that script will save a first clicked index of element, like left mouse click or CTRL clicked element. If element doesn't exist script will put it in parent element of select able items. 
 
 #### last
 
 Type: `String`  
-Default: `"csmouse_last_" + selector`
+Default: `"last_" + selector`
 
 HTML ID attribute of input tag element that script will save a last clicked element. If element doesn't exist script will put it in parent element of select able items.
 
 #### values
 
 Type: `String`  
-Default: `"csmouse_values_" + selector`
+Default: `"values_" + selector`
 
 HTML ID attribute of input tag element that script will save index values of selected elements. If element doesn't exist script will put it in parent element of select able items.
 
 #### items
 
 Type: `String`  
-Default: `"csmouse_items_" + selector`
+Default: `"items_" + selector`
 
 HTML ID attribute of input tag element that script will save IDs values of selected elements. If element doesn't exist script will put it in parent element of select able items.
 
@@ -116,24 +116,30 @@ Default: `csmouse_color`
 
 CSS class that script will add to selected items.
 
+> Selected indicating class; There are two coloring classes one is :hover and the other is this (color). Both must be defined in proper cascading order, like:
+> .selector:hover and .selector.color, for example: 
+> `.sels:hover {background-color: #fedcba;}` and `.sels.sels-blue {background-color: #abcdef;};` 
+> This way, a `:hover` style will be overlapped with `.selector.color`, when element is selected. 
+> Defining them without cascading order will not work, so no good: `.sels:hover{}, .sels-blue{}`
+
 #### all
 
 Type: `String`  
-Default: `"csmouse_all_elem_" + selector`
+Default: `"sel_all_" + selector`
 
 HTML ID attribute of element which click will provide to all items will be selected.
 
 #### none
 
 Type: `String`  
-Default: `"csmouse_none_elem_" + selector`
+Default: `"unsel_all_" + selector`
 
 HTML ID attribute of element which click will provide to all items will be deselected.
 
 #### togg
 
 Type: `String`  
-Default: `"csmouse_toggle_elem_" + selector`
+Default: `"toggle_" + selector`
 
 HTML ID attribute of element which click will provide to toggle items selection.
 
