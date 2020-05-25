@@ -9,6 +9,13 @@
 	<a href="https://geowith.us/csmouse/"><img src="https://geowith.us/csmouse/images/csmouse-animation.gif" width="486" height="520" alt="csmouse demo"></a>
 </p>
 
+## Intro
+
+<p>
+	Knowing that (1) DOM document uses indexes to numerate elements of the same class (among all others), and (2) having in mind ease of folder/files selection in file explorer alike applications, and (3) having the knowledge of HTML DOM Keyboard.key Property, we put all three together of those to this functionality via JavaScript (and jQuery).
+	And this functionality really super-boosts productivity.
+</p>
+
 ## Web page
 
 Check it out [here](https://geowith.us/csmouse/).
@@ -102,14 +109,14 @@ var csMouseItems = $('.sels').CSMouse('sels', {settings options...});
 
 ### `settings options` in both versions
 
-> Note that all option are optional, you can or not to use them.
+> Note that all option are optional. If you want to use defaults, you don't have to set them at all.
 
 #### first
 
 Type: `String`  
 Default: `"first_" + selector`
 
-HTML ID attribute of input tag element that script will save a first clicked index of element, like left mouse click or CTRL clicked element. If element doesn't exist script will put it in parent element of select able items. 
+HTML storage element ID (input type="hidden"), which script uses to save and update first clicked element DOM index, like left mouse click or CTRL clicked element. If element doesn't exist script will put it in parent element of selectable items. 
 
 #### last
 
@@ -192,14 +199,14 @@ HTML ID attribute of element which click will provide JSON string of selected it
 Type: `String`  
 Default: `"csmouse_serial_elem_" + selector`
 
-HTML ID attribute of element which click will provide form serialization format of selected items, e.g. `sel=on&item-1&=onitem-2&=onitem-3&=onitem-4&=on]`.
+HTML ID attribute of element which click will provide form serialization format of selected items, e.g. `sels=on&item-1&=onitem-2&=onitem-3&=onitem-4&=on]`.
 
 #### output
 
 Type: `String`  
 Default: `id`
 
-Choose what HTML tag attribute script will use for selected items, by default that is `ID` of tag element, but you can use e.g. `data-value="999"`.
+Choose what HTML tag attribute script will use for selected items, by default it is element `ID`, but you can use any safely parsable element argument, e.g. `data-value="999"`.
 
 #### debug
 
