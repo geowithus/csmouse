@@ -59,16 +59,18 @@ There is a selector (CSS) class and there are two coloring (CSS) classes (select
 
 1. :hover class, like: 
 ```css
-.selector:hover
+.selector:hover {...}
 ```
-and
 2. selected element class, like: 
 ```css
-.selector.color
+.selector.color {...}
 ```
 
-So, if you choose to have `myclassname` as a main selector class name, selected element color_class must be defined as:
+So, if you choose to have `myclassname` as a main selector class name, CSS should look like:
 ```css
+/*hover*/
+.myclassname:hover {...}
+/*selected element style*/
 .myclassname.color_class {..}
 ```
 
