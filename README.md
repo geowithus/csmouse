@@ -51,7 +51,7 @@ You can download whole package with both scripts:
 
 ## Usage
 
-Note that we don't define your CSS class selector, you choose whatever you want. For multiple lists on one document, you choose different selectors naming. (e.g. first list will have selector: ".sel_one", second: ".sel_two", etc.
+> Note that we don't define your CSS class selector, you choose whatever you want. For multiple lists on one document, you choose different selectors naming (e.g. first list will have selector: ".sel_one", second: ".sel_two", etc.)
 
 ### Selector styling
 
