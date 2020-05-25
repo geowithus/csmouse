@@ -142,7 +142,7 @@ Default: `"items_" + selector`
 
 HTML ID attribute of input tag element that script will save IDs values of selected elements. If element doesn't exist script will put it in parent element of select able items.
 
-> Note, settings options (e.g. function arguments) <b>first, last, values, items</b> are storage types. Those can be any type of storage, including var, hidden input, sessions storage or local (browser) storage. We use hidden input, up to you to addapt to your demands.
+> Note, settings options (e.g. function arguments) <b>first, last, values, items</b> are storage types. Those can be any type of storage, including var, hidden input, session storage or local (browser) storage. We use hidden input, up to you to addapt to your demands.
 
 #### color
 
