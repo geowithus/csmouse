@@ -95,7 +95,7 @@
                 });
 
             } catch(e) {
-                if(this.settings.debug) { console.error("Error:", e); }
+                if(settings.debug) { console.error("Error:", e); }
             }
 
         };
@@ -499,7 +499,7 @@
                 return this;
 
             } catch(e) {
-                if(this.settings.debug) { console.error("Error:", e); }
+                if(settings.debug) { console.error("Error:", e); }
             }
         };
 
