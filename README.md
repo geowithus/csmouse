@@ -258,7 +258,7 @@ csMouseItems.getSelectedSerialize();
 csMouseItems.getSelected();
 ```
 
-> Please note that you use this function call inside scope that you are working. If you want script reference outside scope define global variable for script.
+> Please note that you use this function call inside scope that you are working. If you want script reference outside scope define global variable for the script.
 
 ## Copyright and license
 
