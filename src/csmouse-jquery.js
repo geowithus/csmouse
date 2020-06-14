@@ -6,7 +6,7 @@
  * @Copyright       Copyright (c) GEO With Us Corp. USA, New York, NY
  * @Version         1.2 Apr-2014
  * @License         Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
- * @ComercialUse    Feel free to study and addapt for personal use, but for commercial or any enterprise use, please contact us @ copyright@geowith.us
+ * @ComercialUse    Feel free to study and adapt for personal use, but for commercial or any enterprise use, please contact us @ copyright@geowith.us
  * @URL             https://geowith.us/csmouse/
  *
  */
