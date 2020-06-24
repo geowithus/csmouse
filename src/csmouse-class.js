@@ -98,18 +98,18 @@ function CSMOUSE(selector, settings) {
             } else {
 
                 if (this.numberSelected(values) === 1){
-					
-					this.sv(first, '');
-					this.sv(last, '');
-					this.sv(values, '');
-					this.removeAlreadySelected(index, values);
-					
-				} else {
-                
-					this.sv(last, index);
-					this.removeAlreadySelected(index, values);
-					
-				}
+                    
+                    this.sv(first, '');
+                    this.sv(last, '');
+                    this.sv(values, '');
+                    this.removeAlreadySelected(index, values);
+                    
+                } else {
+                    
+                    this.sv(last, index);
+                    this.removeAlreadySelected(index, values);
+                    
+                }
 
             }
             this.markSelected(selector, values, items, color);
@@ -170,25 +170,25 @@ function CSMOUSE(selector, settings) {
                 }
 
             }
-			var sets = '';
-			var selected = range.split(',');
-			if (this.inArray(this.gv(first), this.gv(values))){
-				
-				for (var i = 0; i < selected.length - 1; i++) {
-				
-					sets += selected[i] + '-a,';
-					
-				}
-				
-			} else {
-				
-				for (var i = 0; i < selected.length - 1; i++) {
-				
-					sets += selected[i] + '-r,';
-					
-				}
-				
-			}
+            var sets = '';
+            var selected = range.split(',');
+            if (this.inArray(this.gv(first), this.gv(values))){
+                
+                for (var i = 0; i < selected.length - 1; i++) {
+                    
+                    sets += selected[i] + '-a,';
+                    
+                }
+                
+            } else {
+                
+                for (var i = 0; i < selected.length - 1; i++) {
+                    
+                    sets += selected[i] + '-r,';
+                    
+                }
+                
+            }
             var new_values = this.gv(values);
             var pairs = sets.split(',');
             for (var i = 0; i < pairs.length - 1; i++) {
