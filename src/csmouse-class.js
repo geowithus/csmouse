@@ -102,14 +102,13 @@ function CSMOUSE(selector, settings) {
                     this.sv(first, '');
                     this.sv(last, '');
                     this.sv(values, '');
-                    this.removeAlreadySelected(index, values);
                     
                 } else {
                     
                     this.sv(last, index);
-                    this.removeAlreadySelected(index, values);
                     
                 }
+                this.removeAlreadySelected(index, values);
 
             }
             this.markSelected(selector, values, items, color);
@@ -725,13 +724,13 @@ function CSMOUSE(selector, settings) {
 
     };
 
-    // Main function handling what set up to use (RESOLVE functions) depending on keyboard+mouse event)
+    // Main function handling what set-up to use (RESOLVE functions) depending on keyboard+mouse event
     this.checkClick = function(e) {
 
         try {
 
             var index = Array.from(this.itemsDOM).indexOf(e.target);
-            var passSingleKey = false;
+            var skipSingleKey = false;
             if (!e.ctrlKey && !e.shiftKey && !e.metaKey) {
 
                 this.RESOLVENoneOfTheKeys(
@@ -756,10 +755,10 @@ function CSMOUSE(selector, settings) {
                     this.settings.items,
                     this.settings.color
                 );
-                passSingleKey = true;
+                skipSingleKey = true;
 
             }
-            if (!passSingleKey) {
+            if (!skipSingleKey) {
 
                 if (e.ctrlKey || e.metaKey) {
 
