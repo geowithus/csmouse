@@ -4,7 +4,7 @@
  * @Idea		Darko B.
  * @Authors		Darko B. && Kresimir K.
  * @Copyright		Copyright (c) GEO With Us Corp. USA, New York, NY
- * @Version		1.2.4 Jun-2020
+ * @Version		1.3.1 Jul-2020
  * @License		Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
  * @ComercialUse	Feel free to study and adapt for personal use, but for commercial or any enterprise use, please contact us @ copyright@geowith.us
  * @URL			https://geowith.us/csmouse/
@@ -350,41 +350,37 @@ function CSMOUSE(selector, settings) {
 
         try {
 
-            if (this.gv(values) !== '') {
+			var new_selects = '';
+			var list = document.querySelectorAll('.' + selector);
+			list.forEach(function(v, i) {
 
-                var new_selects = '';
-                var list = document.querySelectorAll('.' + selector);
-                list.forEach(function(v, i) {
+				if (!this.inArray(i, this.gv(values))) {
 
-                    if (!this.inArray(i, this.gv(values))) {
+					new_selects += i + ',';
+					if (i === 0) {
 
-                        new_selects += i + ',';
-                        if (i === 0) {
+						this.sv(first, i);
 
-                            this.sv(first, i);
+					}
 
-                        }
+				}
 
-                    }
+			}, this);
+			this.sv(values, new_selects);
+			var last_value = new_selects.slice(-2).split(',');
+			this.sv(last, last_value[0]);
+			this.removeClass(selector, color);
+			var a = this.gv(items);
+			var all = a.split(',');
+			list.forEach(function(v, i) {
 
-                }, this);
-                this.sv(values, new_selects);
-                var last_value = new_selects.slice(-2).split(',');
-                this.sv(last, last_value[0]);
-                this.removeClass(selector, color);
-                var a = this.gv(items);
-                var all = a.split(',');
-                list.forEach(function(v, i) {
+				if (this.inArray(i, new_selects)) {
 
-                    if (this.inArray(i, new_selects)) {
+					this.ac(all[i], color);
 
-                        this.ac(all[i], color);
+				}
 
-                    }
-
-                }, this);
-
-            }
+			}, this);
 
         } catch (e) {
             this.cl(e);
