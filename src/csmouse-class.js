@@ -350,37 +350,37 @@ function CSMOUSE(selector, settings) {
 
         try {
 
-			var new_selects = '';
-			var list = document.querySelectorAll('.' + selector);
-			list.forEach(function(v, i) {
+            var new_selects = '';
+            var list = document.querySelectorAll('.' + selector);
+            list.forEach(function(v, i) {
+            
+                if (!this.inArray(i, this.gv(values))) {
 
-				if (!this.inArray(i, this.gv(values))) {
+                    new_selects += i + ',';
+                    if (i === 0) {
 
-					new_selects += i + ',';
-					if (i === 0) {
+                        this.sv(first, i);
 
-						this.sv(first, i);
+                    }
 
-					}
+                }
 
-				}
+            }, this);
+            this.sv(values, new_selects);
+            var last_value = new_selects.slice(-2).split(',');
+            this.sv(last, last_value[0]);
+            this.removeClass(selector, color);
+            var a = this.gv(items);
+            var all = a.split(',');
+            list.forEach(function(v, i) {
 
-			}, this);
-			this.sv(values, new_selects);
-			var last_value = new_selects.slice(-2).split(',');
-			this.sv(last, last_value[0]);
-			this.removeClass(selector, color);
-			var a = this.gv(items);
-			var all = a.split(',');
-			list.forEach(function(v, i) {
+                if (this.inArray(i, new_selects)) {
 
-				if (this.inArray(i, new_selects)) {
+                    this.ac(all[i], color);
 
-					this.ac(all[i], color);
+                }
 
-				}
-
-			}, this);
+            }, this);
 
         } catch (e) {
             this.cl(e);
