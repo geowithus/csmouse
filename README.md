@@ -151,7 +151,7 @@ Default: `csmouse_color`
 
 CSS class that script will add to selected items.
 
-> Selected indicating class; There are two coloring classes one is :hover and the other is this (color). Both must be defined in proper cascading order, like:
+> Selected indicating class; There are two coloring classes - one is :hover and the other is this (color). Both must be defined in proper cascading order, like:
 > .selector:hover and .selector.color, for example: 
 > `.sels:hover {background-color: #fedcba;}` and `.sels.sels-blue {background-color: #abcdef;};` 
 > This way, a `:hover` style will be overlapped with `.selector.color`, when element is selected. 
