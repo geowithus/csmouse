@@ -204,7 +204,7 @@ HTML ID attribute of element which click will provide JSON string of selected it
 Type: `String`  
 Default: `"csmouse_serial_elem_" + selector`
 
-HTML ID attribute of element which click will provide form serialization format of selected items, e.g. `sels=on&item-1&=onitem-2&=onitem-3&=onitem-4&=on]`.
+HTML ID attribute of element which click will provide form serialization format of selected items, e.g. `sels=on&item-1=on&item-2=on&item-3=on&item-4=on]`.
 
 #### output
 
