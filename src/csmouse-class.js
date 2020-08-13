@@ -4,7 +4,7 @@
  * @Idea		Darko B.
  * @Authors		Darko B. && Kresimir K.
  * @Copyright		Copyright (c) GEO With Us Corp. USA, New York, NY
- * @Version		1.3.1 Jul-2020
+ * @Version		1.4.1 Aug-2020
  * @License		Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
  * @ComercialUse	Feel free to study and adapt for personal use, but for commercial or any enterprise use, please contact us @ copyright@geowith.us
  * @URL			https://geowith.us/csmouse/
@@ -196,8 +196,8 @@ function CSMOUSE(selector, settings) {
                 if (op[0] !== this.gv(first) && op[0] !== index) {
 
                     if (op[1] === 'a') {
-
-                        new_values += op[0] + ',';
+						
+						new_values += op[0] + ',';
 
                     } else {
 
@@ -216,11 +216,13 @@ function CSMOUSE(selector, settings) {
                         new_values = temp;
 
                     }
-                    this.sv(values, new_values);
 
                 }
+				new_values = this.removeDuplicateValues(new_values);
+				this.sv(values, new_values);
 
             }
+			
             if (parseInt(this.gv(first)) > parseInt(this.gv(last))) {
 
                 var f = this.gv(first);
@@ -236,7 +238,7 @@ function CSMOUSE(selector, settings) {
         }
 
     };
-
+	
     // Calculate what to select with Shift + left mouse click
     this.selectShift = function(selector, index, first, last, values, items, color) {
 
@@ -329,6 +331,30 @@ function CSMOUSE(selector, settings) {
         }
 
     };
+
+	//Remove duplicates from selected values 
+	this.removeDuplicateValues = function(values){
+		
+		try {
+			
+			var new_values = '';
+			var set = values.split(',');
+			for (var i = 0; i < set.length - 1; i++){
+				
+				if (!this.inArray(set[i], new_values)){
+					
+					new_values += set[i] + ',';
+					
+				}
+				
+			}
+			return new_values;
+			
+		} catch(e) {
+			this.cl(e);
+		}
+		
+	};
 
     // Return number of all selected in each list (cnt)
     this.numberSelected = function(values) {
