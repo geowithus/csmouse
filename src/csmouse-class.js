@@ -196,8 +196,8 @@ function CSMOUSE(selector, settings) {
                 if (op[0] !== this.gv(first) && op[0] !== index) {
 
                     if (op[1] === 'a') {
-						
-						new_values += op[0] + ',';
+                        
+                        new_values += op[0] + ',';
 
                     } else {
 
@@ -218,8 +218,8 @@ function CSMOUSE(selector, settings) {
                     }
 
                 }
-				new_values = this.removeDuplicateValues(new_values);
-				this.sv(values, new_values);
+                new_values = this.removeDuplicateValues(new_values);
+                this.sv(values, new_values);
 
             }
 			
@@ -332,29 +332,29 @@ function CSMOUSE(selector, settings) {
 
     };
 
-	//Remove duplicates from selected values 
-	this.removeDuplicateValues = function(values){
-		
-		try {
-			
-			var new_values = '';
-			var set = values.split(',');
-			for (var i = 0; i < set.length - 1; i++){
-				
-				if (!this.inArray(set[i], new_values)){
-					
-					new_values += set[i] + ',';
-					
-				}
-				
-			}
-			return new_values;
-			
-		} catch(e) {
-			this.cl(e);
-		}
-		
-	};
+    //Remove duplicates from selected values 
+    this.removeDuplicateValues = function(values){
+        
+        try {
+            
+            var new_values = '';
+            var set = values.split(',');
+            for (var i = 0; i < set.length - 1; i++){
+                
+                if (!this.inArray(set[i], new_values)){
+                    
+                    new_values += set[i] + ',';
+                    
+                }
+                
+            }
+            return new_values;
+            
+        } catch(e) {
+            this.cl(e);
+        }
+        
+    };
 
     // Return number of all selected in each list (cnt)
     this.numberSelected = function(values) {
